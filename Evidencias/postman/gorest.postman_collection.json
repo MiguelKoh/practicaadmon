@@ -1,0 +1,561 @@
+{
+	"info": {
+		"_postman_id": "10ea709e-2b13-4834-8e28-32a825b51c83",
+		"name": "gorest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Consulta lista de usuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gorest.co.in/public/v1/users?&page=20",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v1",
+								"users"
+							],
+							"query": [
+								{
+									"key": null,
+									"value": null
+								},
+								{
+									"key": "page",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 28 Nov 2021 22:41:20 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"38d18c7697068d917e766884b6e9e2a6\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_gorest_co_in_session=Ez2Atj9G0ndJ0i8hvTIvXKWf%2BtrKP5DYx8reNxVNLUT1pbIhLLiafamWi3MNLAF9soz5PvyG%2FsmZfDIjuZiBWsa2dRjtjBG5eqlsD%2BAyWYULsrSNGfWU%2Ben5MvQfN%2Bh2YQ441utJV5oX%2Br73d4bPGnHe01ttPZrp%2BXEKuN5eLd2fLQ6MhJj9sDZn%2FyiLn3mhefPb6RclXXs84Cbfn%2Fh2qBIdPlQtDkdMbjzPJzGEt2KAYTOi0yGtrK2SD5hq3npLxrBhSvKhzyCuKw4o7FBEfnqf6eD0%2BY%2FO2Su3bNg%3D--n9foJzAyy5NJE8jN--4rFiPez5o17LMgrNadNPAw%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "4c4a6468-e547-4e85-bed0-ba033faa3f2d"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.020368"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": {\n        \"pagination\": {\n            \"total\": 2031,\n            \"pages\": 102,\n            \"page\": 20,\n            \"limit\": 20,\n            \"links\": {\n                \"previous\": \"https://gorest.co.in/public/v1/users?page=19\",\n                \"current\": \"https://gorest.co.in/public/v1/users?page=20\",\n                \"next\": \"https://gorest.co.in/public/v1/users?page=21\"\n            }\n        }\n    },\n    \"data\": [\n        {\n            \"id\": 806,\n            \"name\": \"Bhoopat Johar\",\n            \"email\": \"johar_bhoopat@renner.net\",\n            \"gender\": \"female\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 807,\n            \"name\": \"Deb Acharya\",\n            \"email\": \"deb_acharya@baumbach.name\",\n            \"gender\": \"male\",\n            \"status\": \"active\"\n        },\n        {\n            \"id\": 808,\n            \"name\": \"Alok Nayar\",\n            \"email\": \"nayar_alok@stamm.biz\",\n            \"gender\": \"male\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 809,\n            \"name\": \"Chitramala Chaturvedi\",\n            \"email\": \"chaturvedi_chitramala@ferry-stoltenberg.co\",\n            \"gender\": \"male\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 810,\n            \"name\": \"Ayushmati Varma\",\n            \"email\": \"varma_ayushmati@weber-gutkowski.com\",\n            \"gender\": \"male\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 811,\n            \"name\": \"Chakor Sethi\",\n            \"email\": \"chakor_sethi@armstrong.biz\",\n            \"gender\": \"male\",\n            \"status\": \"active\"\n        },\n        {\n            \"id\": 812,\n            \"name\": \"Ramesh Gupta\",\n            \"email\": \"gupta_ramesh@mraz-wisoky.name\",\n            \"gender\": \"male\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 813,\n            \"name\": \"Trilochana Butt V\",\n            \"email\": \"trilochana_v_butt@carroll.name\",\n            \"gender\": \"male\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 814,\n            \"name\": \"Aagney Pillai PhD\",\n            \"email\": \"phd_aagney_pillai@mann.biz\",\n            \"gender\": \"female\",\n            \"status\": \"active\"\n        },\n        {\n            \"id\": 815,\n            \"name\": \"Vishwamitra Iyengar PhD\",\n            \"email\": \"iyengar_phd_vishwamitra@hills.co\",\n            \"gender\": \"female\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 816,\n            \"name\": \"Dulari Asan\",\n            \"email\": \"asan_dulari@stanton-krajcik.co\",\n            \"gender\": \"female\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 817,\n            \"name\": \"Rev. Raj Naik\",\n            \"email\": \"rev_naik_raj@ryan-pouros.io\",\n            \"gender\": \"male\",\n            \"status\": \"active\"\n        },\n        {\n            \"id\": 818,\n            \"name\": \"Baalaaditya Talwar\",\n            \"email\": \"baalaaditya_talwar@haley-ebert.com\",\n            \"gender\": \"male\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 819,\n            \"name\": \"Devangana Panicker\",\n            \"email\": \"devangana_panicker@hansen.io\",\n            \"gender\": \"male\",\n            \"status\": \"active\"\n        },\n        {\n            \"id\": 820,\n            \"name\": \"Daevika Kaniyar\",\n            \"email\": \"kaniyar_daevika@lemke.net\",\n            \"gender\": \"female\",\n            \"status\": \"active\"\n        },\n        {\n            \"id\": 821,\n            \"name\": \"Acharyasuta Pothuvaal\",\n            \"email\": \"pothuvaal_acharyasuta@baumbach.org\",\n            \"gender\": \"male\",\n            \"status\": \"active\"\n        },\n        {\n            \"id\": 822,\n            \"name\": \"Harita Pothuvaal\",\n            \"email\": \"pothuvaal_harita@kling.name\",\n            \"gender\": \"male\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 823,\n            \"name\": \"Chidananda Deshpande\",\n            \"email\": \"chidananda_deshpande@stoltenberg.co\",\n            \"gender\": \"female\",\n            \"status\": \"active\"\n        },\n        {\n            \"id\": 824,\n            \"name\": \"Prof. Trisha Kaul\",\n            \"email\": \"kaul_trisha_prof@fay.io\",\n            \"gender\": \"female\",\n            \"status\": \"inactive\"\n        },\n        {\n            \"id\": 825,\n            \"name\": \"Mr. Jyotsana Reddy\",\n            \"email\": \"mr_jyotsana_reddy@hahn.info\",\n            \"gender\": \"male\",\n            \"status\": \"active\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Editar un usuario",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"miguel\",\r\n    \"email\": \"miguelkoh@prueba.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v1/users/808",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v1",
+						"users",
+						"808"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar usuario",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v1/users/809",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v1",
+						"users",
+						"809"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"MiguelKoh2\",\r\n\"email\": \"mail@mail\",\r\n\"gender\": \"male\",\r\n\"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v1/users/",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v1",
+						"users",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Crear usuario",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"name\": \"MiguelKoh2\",\r\n\"email\": \"mail@mail\",\r\n\"gender\": \"male\",\r\n\"status\": \"active\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gorest.co.in/public/v1/users/",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v1",
+								"users",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 28 Nov 2021 23:23:57 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Location",
+							"value": "https://gorest.co.in/public/v1/users/3069"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"18b640fe6aa03be6cbe6dcde74c60271\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_gorest_co_in_session=ug2zf0CUNtA5MxjY%2FWPmxCGzGYpAIt55baWYYIYb3ZiHUjyTx83%2FQwX%2FpUARrynqni87kqxeDLGR0Y3zlhA0BwNt%2BuZxlGllYea8HFW8tNB1%2F1s8ZtYDklWKboUPTKXoNnjdZTbGhbpJiYomHZmu%2BVWfUGAFei60osyDGXRU1FtmUbdhq4rsdrE%2BetJ7QaQQMMJmmwPB4e7ASf9GU5Zp4FrskewOx%2FubetgEpNAlk4z6s7Cg9qDoOrRi8G%2BpqMnmKLHxcjBeojgP9j0RZXgEYcLLITKkx3d%2BdoFojdk%3D--moniA4BR1tomR1hO--x6lHu9LsEdV2lpZUpmGIOQ%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "8efa73ea-0a3e-424b-b7b6-07479dbf2ec7"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.017918"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": null,\n    \"data\": {\n        \"id\": 3069,\n        \"name\": \"MiguelKoh2\",\n        \"email\": \"mail@mail\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta POST",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v1/posts?&page=10",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v1",
+						"posts"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": "page",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar un POST",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"body\":\"edicion hecha por Miguel Koh\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v1/posts/755",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v1",
+						"posts",
+						"755"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Editar un POST",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"body\":\"edicion hecha por Miguel Koh\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gorest.co.in/public/v1/posts/755",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v1",
+								"posts",
+								"755"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 29 Nov 2021 04:57:58 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c1af7c101a7ca4f262198cccb7556f31\""
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_gorest_co_in_session=F2Ph%2BhXjwA0FGZxczEOzknDwe0zvCkPYxr7XrQ7zdyGDOuY9ahIkak1FWLFdc0lANNtwUPjE9Ze%2FQP7voirqH5zjyzqTnyg6TmXC7PZixu4%2FDJJj1B5L81rKjOxrcIV6MnkLzJYKIAnC4IC7nRZsHEyFYYt00TNrL0TZXE3fRTR2KmGfaFIpYPU%2Bhp9AJYv8osskCPg7VovEzhSJu9kRmwABOfLK4PNLvMCsZ2Wpu2hEw%2Fb%2BtII75P1QBfG3%2F%2FbcIhFaIdZxVOwNn8APwBX1VNgQkOxvW1uENm%2B9KbM%3D--qyJMQHWcpyWiPEbN--jl%2FuPM5eTGsnn%2FhEAeLFCA%3D%3D; path=/; secure; HttpOnly; SameSite=Lax"
+						},
+						{
+							"key": "X-Request-Id",
+							"value": "09333563-5357-4649-918a-ae2ec9e00e22"
+						},
+						{
+							"key": "X-Runtime",
+							"value": "0.019789"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubDomains"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": null,\n    \"data\": {\n        \"body\": \"edicion hecha por Miguel Koh\",\n        \"user_id\": 764,\n        \"id\": 755,\n        \"title\": \"Custodia stillicidium tergo velut dolorem calculus reiciendis.\"\n    }\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
